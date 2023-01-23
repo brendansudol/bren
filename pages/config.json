@@ -85,12 +85,6 @@
       "summary": "Practice your blackjack card counting skillz."
     },
     {
-      "title": "Spot it - Emoji Edition",
-      "url": "http://brendansudol.github.io/find-emoji/",
-      "icon": "1f9d0.svg",
-      "summary": "A fun, simple game to find the one shared emoji."
-    },
-    {
       "title": "Alpha Bravo Charlie",
       "url": "https://brendansudol.github.io/alpha-bravo-charlie/#abc=nato&txt=WTF!",
       "icon": "1f524.svg",
@@ -145,6 +139,12 @@
       "url": "http://brendansudol.github.io/college-scorecard-rankings/?c150_4_pooled=1&md_earn_wne_p10=2&pctpell=1",
       "icon": "1f393.svg",
       "summary": "Create your own \"Top Colleges\" ranking."
+    },
+    {
+      "title": "Spot it - Emoji Edition",
+      "url": "http://brendansudol.github.io/find-emoji/",
+      "icon": "1f9d0.svg",
+      "summary": "A fun, simple game to find the one shared emoji."
     }
   ]
 }
