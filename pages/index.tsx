@@ -11,17 +11,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="max-w-[775px] mx-auto p-4">
-        <h1 className="mb-8 text-xl font-black">Brendan Sudol</h1>
-        <p className="mb-4 text-base max-w-prose">
+      <main className="max-w-[780px] mx-auto px-4 py-6 font-light">
+        <h1 className="mb-8 text-xl font-black lowercase">Brendan Sudol</h1>
+        <p className="mb-4 max-w-prose">
           Hello! I’m Brendan. A little about myself — I live in Asheville, NC. I’m a software
           engineer. I love books and movies, playing golf, and soft pretzels. I also really enjoy
           making fun, little websites; here’s a sampling:
         </p>
-        <div className="py-8 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-10">
+        <div className="py-8 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-9">
           {config.projects.map((project, idx) => (
             <div key={idx} className="sm:flex">
-              <a className="flex-none block mr-2" href={project.url}>
+              <a className="flex-none block mr-2 py-0.5" href={project.url}>
                 <Image
                   alt={project.title}
                   src={`/img/${project.icon}`}
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <footer className="py-5 mt-8 flex items-center gap-5 text-sm">
+        <footer className="py-3 mt-8 flex items-center gap-5 text-sm">
           <a
             className="underline"
             href="https://github.com/brendansudol"
