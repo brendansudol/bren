@@ -1,5 +1,7 @@
+import { morph } from "@/utils/morph"
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 import config from "./config.json"
 
 export default function Home() {
@@ -12,9 +14,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-[780px] mx-auto px-4 py-6 font-light">
-        <h1 className="mb-8 text-xl lg:text-2xl leading-none font-black lowercase">
+        <Link
+          href="/"
+          className="inline-block mb-8 text-xl lg:text-2xl leading-none font-black lowercase hover:underline"
+        >
           {config.name}
-        </h1>
+        </Link>
         <p className="mb-4 max-w-prose">
           Hello! I’m Brendan. A little about myself — I live in Asheville, NC. I’m a software
           engineer. I love books and movies, playing golf, and soft pretzels. I also really enjoy
@@ -39,7 +44,7 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {project.title}
+                  {project.title === "Tradecraft" ? <Morph text={project.title} /> : project.title}
                 </a>{" "}
                 <span className="text-gray-500">{project.summary}</span>
               </div>
@@ -70,4 +75,12 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+function Morph({ text }: { text: string }) {
+  const handleTextMorph = (el: HTMLElement | null) => {
+    if (el) morph(el, text)
+  }
+
+  return <span ref={handleTextMorph}>{text}</span>
 }
