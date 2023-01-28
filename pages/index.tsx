@@ -18,7 +18,7 @@ export default function Home() {
           href="/"
           className="inline-block mb-8 text-xl lg:text-2xl leading-none font-black lowercase hover:underline"
         >
-          {config.name}
+          <Morph text={config.name} />
         </Link>
         <p className="mb-4 max-w-prose">
           Hello! I’m Brendan. A little about myself — I live in Asheville, NC. I’m a software
@@ -44,7 +44,7 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {project.title === "Tradecraft" ? <Morph text={project.title} /> : project.title}
+                  {project.title}
                 </a>{" "}
                 <span className="text-gray-500">{project.summary}</span>
               </div>
