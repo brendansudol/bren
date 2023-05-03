@@ -16,16 +16,16 @@ export default function Home() {
       <main className="max-w-[780px] mx-auto px-4 py-6 font-light">
         <Link
           href="/"
-          className="inline-block mb-8 text-xl lg:text-2xl leading-none font-black lowercase hover:underline"
+          className="inline-block mb-4 text-xl lg:text-2xl leading-none font-black lowercase hover:underline"
         >
           <Morph text={config.name} />
         </Link>
-        <p className="mb-4 max-w-prose">
+        <p className="py-8 md:py-10 max-w-prose">
           Hello! I’m Brendan. A little about myself — I live in Asheville, NC. I’m a software
           engineer. I love books and movies, playing golf, and soft pretzels. I also really enjoy
           making fun, little websites; here’s a sampling:
         </p>
-        <div className="py-7 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-y-10">
+        <div className="py-7 grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-y-10">
           {config.projects.map((project, idx) => (
             <div key={idx} className="sm:flex">
               <a className="flex-none block mr-2 py-0.5" href={project.url}>

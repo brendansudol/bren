@@ -2,9 +2,15 @@
   "name": "Brendan Sudol",
   "projects": [
     {
-      "title": "punchlines.ai",
+      "title": "Hearsay",
+      "url": "https://try-hearsay.vercel.app",
+      "summary": "Transcribe and summarize audio with AI.",
+      "icon": "1f399.svg"
+    },
+    {
+      "title": "Punchlines",
       "url": "https://punchlines.ai",
-      "summary": "Generate jokes with a GPT-based AI.",
+      "summary": "An AI-powered comedy writing partner.",
       "icon": "1f916.svg"
     },
     {
@@ -28,7 +34,7 @@
     {
       "title": "Scrantonicity",
       "url": "https://scrantonicity.co",
-      "summary": "Rediscover your favorites lines from The Office.",
+      "summary": "All your favorites lines from The Office.",
       "icon": "1f468-1f3fb-200d-1f4bc.svg"
     },
     {
@@ -47,7 +53,7 @@
       "title": "Better Know Your Area",
       "url": "http://betterknowyourarea.com",
       "icon": "1f5fa.svg",
-      "summary": "Explore social, economic, & housing data in the USA."
+      "summary": "Explore social, economic, & housing data."
     },
     {
       "title": "The NitPickster",
